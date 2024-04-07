@@ -1,14 +1,14 @@
 <?php
 /**
  * Title: Comments
- * Slug: spielberg/hidden-comments
+ * Slug: van-gogh/hidden-comments
  * Inserter: no
  */
 ?>
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
-	<!-- wp:comments-title {"showPostTitle":false,"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}}},"textColor":"contrast-2","className":"is-style-spielberg-title-separator-right","fontSize":"medium"} /-->
+	<!-- wp:comments-title {"showPostTitle":false,"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-2"}}}},"textColor":"contrast-2","className":"is-style-van-gogh-title-separator-right","fontSize":"medium"} /-->
 
 	<!-- wp:comment-template -->
 	<!-- wp:group {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|60"}}}} -->

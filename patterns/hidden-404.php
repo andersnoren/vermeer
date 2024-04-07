@@ -1,13 +1,13 @@
 <?php
 /**
  * Title: 404
- * Slug: spielberg/hidden-404
+ * Slug: van-gogh/hidden-404
  * Inserter: no
  */
 ?>
 
 <!-- wp:heading {"textAlign":"center","level":1,"fontSize":"heading-3"} -->
-<h1 class="wp-block-heading has-text-align-center has-heading-3-font-size" id="page-not-found"><?php echo esc_attr_x( 'Error 404', '404 page title', 'spielberg' ); ?></h1>
+<h1 class="wp-block-heading has-text-align-center has-heading-3-font-size" id="page-not-found"><?php echo esc_attr_x( 'Error 404', '404 page title', 'van-gogh' ); ?></h1>
 <!-- /wp:heading -->
 
 <!-- wp:separator -->
@@ -15,11 +15,11 @@
 <!-- /wp:separator -->
 
 <!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><?php echo esc_attr_x( 'The page could not be found. Return to the front page or try the search form below.', '404 page text', 'spielberg' ); ?></p>
+<p class="has-text-align-center"><?php echo esc_attr_x( 'The page could not be found. Return to the front page or try the search form below.', '404 page text', 'van-gogh' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"constrained","contentSize":"280px"}} -->
 <div class="wp-block-group">
-	<!-- wp:pattern {"slug":"spielberg/hidden-search"} /-->
+	<!-- wp:pattern {"slug":"van-gogh/hidden-search"} /-->
 </div>
 <!-- /wp:group -->

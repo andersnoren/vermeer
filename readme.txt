@@ -1,4 +1,4 @@
-=== Spielberg ===
+=== van Gogh ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.4
@@ -16,8 +16,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Copyright ==
 
-Spielberg WordPress Theme, (C) 2024 Anders Norén.
-Spielberg is distributed under the terms of the GNU GPL.
+van Gogh WordPress Theme, (C) 2024 Anders Norén.
+van Gogh is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -31,9 +31,9 @@ GNU General Public License for more details.
 
 == Licenses ==
 
-Spielberg is derived from the Norrsken WordPress Theme, (C) 2024 Anders Norén.
+van Gogh is derived from the Norrsken WordPress Theme, (C) 2024 Anders Norén.
 
-Spielberg bundles the following third-party resources:
+van Gogh bundles the following third-party resources:
 
 Geist font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
