@@ -1,0 +1,16 @@
+header.wp-block-template-part {
+	mix-blend-mode: exclusion;
+	position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+	z-index: 11;
+}
+
+.is-style-van-gogh-marquee {
+	display: flex;
+}
+
+.is-style-van-gogh-marquee div {
+	white-space: nowrap;
+}

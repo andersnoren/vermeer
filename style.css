@@ -34,6 +34,12 @@ a {
 	}
 }
 
+/* TYPOGRAPHY */
+
+h1 {
+	font-feature-settings: 'ss02' on, 'ss03' on;
+}
+
 /* TEMPLATE PART: FOOTER */
 
 .theme-author-credit a { text-decoration: none; }

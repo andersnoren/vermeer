@@ -43,8 +43,11 @@ Geist Mono font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://github.com/vercel/geist-font
 
-Images in /assets/images/ by Anders Norén 
+/assets/images/vincent-van-gogh.jpg
+Name: Vincent van Gogh, 1886
+Author: John Peter Russell (1858–1930)
 License: Public domain
+Source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_s0273V1962_-_Van_Gogh_Museum.jpg
 
 === Image in screenshot.jpg ===
 

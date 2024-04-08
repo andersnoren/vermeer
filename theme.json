@@ -14,11 +14,16 @@
 					"color": "#ECECE9",
 					"name": "Contrast",
 					"slug": "contrast"
+				},
+				{
+					"color": "#808080",
+					"name": "Contrast #2",
+					"slug": "contrast-2"
 				}
 			]
 		},
 		"layout": {
-			"contentSize": "499px",
+			"contentSize": "500px",
 			"wideSize": "1248px"
 		},
 		"spacing": {
@@ -73,7 +78,7 @@
 				},
 				{
 					"name": "Body Margin",
-					"size": "clamp(24px, 6.4vw, 64px)",
+					"size": "clamp(32px, 6.4vw, 64px)",
 					"slug": "body-margin"
 				}
 			],
@@ -294,30 +299,14 @@
 				}
 			},
 			"core/navigation": {
-				"elements": {
-					"link": {
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
-						"typography": {
-							"textDecoration": "none"
-						}
-					}
+				"spacing": {
+					"blockGap": "0"
 				}
 			},
-			"core/navigation-submenu": {
-				"color": {
-					"background": "var(--wp--preset--color--base)",
-					"text": "var(--wp--preset--color--contrast)"
-				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--contrast)"
-						}
-					}
+			"core/navigation-link": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--geist-mono)",
+					"lineHeight": "1.25"
 				}
 			},
 			"core/post-author": {
@@ -354,28 +343,22 @@
 					}
 				}
 			},
-			"core/site-logo": {
-				"border": {
-					"radius": "999px"
+			"core/social-links": {
+				"spacing": {
+					"blockGap": ".5em"
 				}
 			},
 			"core/site-title": {
 				"elements": {
 					"link": {
-						":hover": {
-							"typography": {
-								"textDecoration": "underline"
-							}
-						},
 						"typography": {
 							"textDecoration": "none"
 						}
 					}
 				},
 				"typography": {
-					"fontSize": "inherit",
-					"fontStyle": "normal",
-					"fontWeight": "inherit"
+					"fontSize": "clamp( 96px, 19.2vw, 192px )",
+					"lineHeight": ".95"
 				}
 			}
 		},
@@ -451,7 +434,8 @@
 			"h1": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)",
-					"lineHeight": "1.25"
+					"letterSpacing": "-0.05em",
+					"lineHeight": "1"
 				}
 			},
 			"h2": {
@@ -488,7 +472,8 @@
 			},
 			"heading": {
 				"typography": {
-					"fontWeight": "300"
+					"fontWeight": "700",
+					"letterSpacing": "-0.02em"
 				}
 			},
 			"link": {

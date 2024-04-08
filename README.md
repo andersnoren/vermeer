@@ -25,3 +25,4 @@ Do you want to support the continued development of van Gogh? You can send me a 
 
 ## Resources
 - [About van Gogh](https://andersnoren.se/teman/van-gogh-wordpress-theme/)
+- [van Gogh demo site](https://van-gogh.andersnoren.se/)

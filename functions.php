@@ -26,7 +26,19 @@ add_action( 'wp_enqueue_scripts', 'van_gogh_styles' );
 if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 	function van_gogh_block_styles() {
 
-		/* REGISTER STYLES FOR SPECIFIC BLOCK STYLES */
+		/* ENQUEUE STYLESHEETS FOR SPECIFIC BLOCKS */
+
+		wp_enqueue_block_style(
+			'core/social-links',
+			array(
+				'handle'	=> 'van-gogh-social-links',
+				'src'		=> get_theme_file_uri( 'assets/css/blocks/social-links.css' ),
+				'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
+				'path'		=> get_theme_file_path( 'assets/css/blocks/social-links.css' ),
+			)
+		);
+
+		/* ENQUEUE STYLESHEETS FOR SPECIFIC BLOCK STYLES */
 
 		wp_enqueue_block_style(
 			'core/site-title',
@@ -39,23 +51,23 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		);
 
 		wp_enqueue_block_style(
-			'core/list',
+			'core/navigation',
 			array(
-				'handle'	=> 'van-gogh-links-list',
-				'src'		=> get_theme_file_uri( 'assets/css/block-styles/van-gogh-links-list.css' ),
+				'handle'	=> 'van-gogh-navigation-separated-with-arrows',
+				'src'		=> get_theme_file_uri( 'assets/css/block-styles/van-gogh-navigation-separated-with-arrows.css' ),
 				'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
-				'path'		=> get_theme_file_path( 'assets/css/block-styles/van-gogh-links-list.css' ),
+				'path'		=> get_theme_file_path( 'assets/css/block-styles/van-gogh-navigation-separated-with-arrows.css' ),
 			)
 		);
 
 		/* REGISTER BLOCK STYLES */
 
 		register_block_style(
-			'core/list',
+			'core/navigation',
 			array(
-				'name'			=> 'van-gogh-links-list',
-				'label'			=> __( 'List of links with separators and arrows', 'van-gogh' ),
-				'style_handle'	=> 'van-gogh-links-list'
+				'name'			=> 'van-gogh-separated-with-arrows',
+				'label'			=> __( 'Styled vertical navigation', 'van-gogh' ),
+				'style_handle'	=> 'van-gogh-separated-with-arrows'
 			)
 		);
 
@@ -63,7 +75,7 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 			'core/site-title',
 			array(
 				'name'			=> 'van-gogh-marquee',
-				'label'			=> __( 'Marquee title, looping from the left to the right', 'van-gogh' ),
+				'label'			=> __( 'Marquee (→)', 'van-gogh' ),
 				'style_handle'	=> 'van-gogh-marquee'
 			)
 		);
@@ -71,3 +83,17 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 	}
 endif;
 add_action( 'init', 'van_gogh_block_styles' );
+
+
+/*	-----------------------------------------------------------------------------------------------
+	REGISTER SCRIPTS
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'van_gogh_register_scripts' ) ) :
+	function van_gogh_register_scripts() {
+		
+		wp_enqueue_script( 'van-gogh-marquee', get_theme_file_uri( 'assets/js/van-gogh-marquee.js' ), array(), wp_get_theme( 'van-gogh' )->get( 'Version' ), array( 'in_footer' => true ) );
+
+	}
+endif;
+add_action( 'wp_enqueue_scripts', 'van_gogh_register_scripts' );
