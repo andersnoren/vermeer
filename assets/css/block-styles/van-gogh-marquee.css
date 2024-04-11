@@ -7,10 +7,11 @@ header.wp-block-template-part {
 	z-index: 11;
 }
 
-.is-style-van-gogh-marquee {
+.is-style-van-gogh-marquee,
+.is-style-van-gogh-marquee .slider {
 	display: flex;
 }
 
-.is-style-van-gogh-marquee div {
+.is-style-van-gogh-marquee .slider {
 	white-space: nowrap;
 }
