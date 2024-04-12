@@ -1,22 +1,22 @@
 {
-    "title": "Inverted",
+    "title": "Wilde",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000000",
+					"color": "#0B226D",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#00000099",
+					"color": "#0B226D99",
 					"name": "Contrast #2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#00000020",
+					"color": "#0B226D20",
 					"name": "Contrast #3",
 					"slug": "contrast-3"
 				},
@@ -27,5 +27,10 @@
 				}
 			]
 		}
-    }
+    },
+	"styles": {
+		"color": {
+			"gradient": "linear-gradient(126.85deg, #C6FFDD 27.37%, #FBD786 62.94%, #F7797D 100%)"
+		}
+	}
 }

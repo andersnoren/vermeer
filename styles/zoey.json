@@ -1,27 +1,27 @@
 {
-    "title": "Inverted",
+    "title": "Zoey",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
         "color": {
 			"palette": [
 				{
-					"color": "#000000",
+					"color": "#011A5D",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#00000099",
+					"color": "#011A5D99",
 					"name": "Contrast #2",
 					"slug": "contrast-2"
 				},
 				{
-					"color": "#00000020",
+					"color": "#011A5D20",
 					"name": "Contrast #3",
 					"slug": "contrast-3"
 				},
 				{
-					"color": "#FFFFFF",
+					"color": "#FEE5A2",
 					"name": "Base",
 					"slug": "base"
 				}

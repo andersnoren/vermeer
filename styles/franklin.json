@@ -1,5 +1,5 @@
 {
-    "title": "Inverted",
+    "title": "Franklin",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
@@ -21,7 +21,7 @@
 					"slug": "contrast-3"
 				},
 				{
-					"color": "#FFFFFF",
+					"color": "#FFD600",
 					"name": "Base",
 					"slug": "base"
 				}
