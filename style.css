@@ -1,12 +1,12 @@
 /*
-Theme Name: Vincent
-Text Domain: vincent
+Theme Name: Vermeer
+Text Domain: vermeer
 Version: 1.0.0
-Description: Vincent is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
+Description: Vermeer is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
 Tags: custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, translation-ready, wide-blocks, block-styles, style-variations, portfolio
 Author: Anders Norén
 Author URI: https://andersnoren.se
-Theme URI: https://andersnoren.se/teman/vincent-wordpress-theme/
+Theme URI: https://andersnoren.se/teman/vermeer-wordpress-theme/
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 6.5
@@ -66,11 +66,11 @@ h6,
 
 /* TEMPLATE PART: HEADER */
 
-.vincent-is-fixed-title-header {
+.vermeer-is-fixed-title-header {
 	mix-blend-mode: exclusion;
 }
 
-body:not(.editor-styles-wrapper) .vincent-is-fixed-title-header {
+body:not(.editor-styles-wrapper) .vermeer-is-fixed-title-header {
 	position: fixed;
 		left: 0;
 		right: 0;

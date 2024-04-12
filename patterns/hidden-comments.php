@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Comments
- * Slug: vincent/hidden-comments
+ * Slug: vermeer/hidden-comments
  * Inserter: no
  */
 ?>

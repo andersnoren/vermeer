@@ -1,0 +1,14 @@
+[class*="is-style-vermeer-marquee-"] {
+	overflow: hidden;
+	transition: opacity .25s linear;
+}
+
+[class*="is-style-vermeer-marquee-"],
+[class*="is-style-vermeer-marquee-"] .slider {
+	display: flex;
+	white-space: nowrap;
+}
+
+[class*="is-style-vermeer-marquee-"] .slider {
+	will-change: transform;
+}

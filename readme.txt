@@ -1,4 +1,4 @@
-=== Vincent ===
+=== Vermeer ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.5
@@ -16,8 +16,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Copyright ==
 
-Vincent WordPress Theme, (C) 2024 Anders Norén.
-Vincent is distributed under the terms of the GNU GPL.
+Vermeer WordPress Theme, (C) 2024 Anders Norén.
+Vermeer is distributed under the terms of the GNU GPL.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -31,9 +31,9 @@ GNU General Public License for more details.
 
 == Licenses ==
 
-Vincent is derived from the Norrsken WordPress Theme, (C) 2024 Anders Norén.
+Vermeer is derived from the Norrsken WordPress Theme, (C) 2024 Anders Norén.
 
-Vincent bundles the following third-party resources:
+Vermeer bundles the following third-party resources:
 
 Geist font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
