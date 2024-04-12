@@ -6,19 +6,24 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#131316",
-					"name": "Base",
-					"slug": "base"
-				},
-				{
 					"color": "#ECECE9",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#808080",
+					"color": "#ECECE999",
 					"name": "Contrast #2",
 					"slug": "contrast-2"
+				},
+				{
+					"color": "#ECECE920",
+					"name": "Contrast #3",
+					"slug": "contrast-3"
+				},
+				{
+					"color": "#131316",
+					"name": "Base",
+					"slug": "base"
 				}
 			]
 		},
@@ -315,11 +320,6 @@
 					"lineHeight": "1.25"
 				}
 			},
-			"core/post-author": {
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
-				}
-			},
 			"core/post-author-name": {
 				"elements": {
 					"link": {
@@ -332,9 +332,6 @@
 							"textDecoration": "none"
 						}
 					}
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/post-content": {
@@ -345,6 +342,20 @@
 								"bottom": "var(--wp--preset--spacing--40)",
 								"top": "var(--wp--preset--spacing--70)"
 							}
+						}
+					}
+				}
+			},
+			"core/post-date": {
+				"elements": {
+					"link": {
+						":hover": {
+							"typography": {
+								"textDecoration": "underline"
+							}
+						},
+						"typography": {
+							"textDecoration": "none"
 						}
 					}
 				}
@@ -361,6 +372,29 @@
 							"textDecoration": "none"
 						}
 					}
+				}
+			},
+			"core/pullquote": {
+				"elements": {
+					"cite": {
+						"color": {
+							"text": "var(--wp--preset--color--contrast-2)"
+						}
+					}
+				},
+				"spacing": {
+					"padding": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			},
+			"core/separator": {
+				"border": {
+					"width": "1px"
+				},
+				"color": {
+					"text": "var(--wp--preset--color--contrast-3)"
 				}
 			},
 			"core/site-title": {
@@ -425,6 +459,10 @@
 			"cite": {
 				"color": {
 					"text": "var(--wp--preset--color--contrast-2)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--normal)",
+					"fontStyle": "normal"
 				}
 			},
 			"h1": {
@@ -508,6 +546,11 @@
 			"area": "footer",
 			"name": "footer",
 			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "loop",
+			"title": "Loop"
 		}
 	],
 	"version": 2,

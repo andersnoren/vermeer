@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: 404
- * Slug: van-gogh/404
+ * Title: Hidden 404
+ * Slug: van-gogh/hidden-404
  * Categories: hidden
  * Inserter: no
  */

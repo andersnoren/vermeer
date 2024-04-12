@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: footer
- * Slug: van-gogh/footer
+ * Title: Footer
+ * Slug: van-gogh/hidden-footer
  * Categories: hidden
  * Inserter: no
  */

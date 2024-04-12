@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: home
+ * Title: Home
  * Slug: van-gogh/hidden-home
  * Categories: hidden
  * Inserter: no
