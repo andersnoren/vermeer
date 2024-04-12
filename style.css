@@ -71,7 +71,6 @@ h6,
 }
 
 body:not(.editor-styles-wrapper) .van-gogh-is-fixed-title-header {
-	mix-blend-mode: exclusion;
 	position: fixed;
 		left: 0;
 		right: 0;

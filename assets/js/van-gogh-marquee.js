@@ -22,6 +22,9 @@ class Marquee {
 		// Construct the HTML used for the marquee.
 		mInst.build();
 
+		// If the visitor is set to reduce motion, disable animations.
+		if ( window.matchMedia( '(prefers-reduced-motion)' ).matches ) return;
+
 		// Animate the marquee.
 		mInst.animate();
 
