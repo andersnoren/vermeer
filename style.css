@@ -2,7 +2,7 @@
 Theme Name: van Gogh
 Text Domain: van-gogh
 Version: 1.0.0
-Description: van Gogh is a Linktree-style profile theme with an eyegrabbing marquee effect on the site title. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
+Description: van Gogh is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
 Tags: custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, translation-ready, wide-blocks, block-styles, style-variations, portfolio
 Author: Anders Norén
 Author URI: https://andersnoren.se
@@ -11,7 +11,7 @@ License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 6.5
 Requires PHP: 7.4
-Tested up to: 6.4
+Tested up to: 6.5
 */
 
 body {

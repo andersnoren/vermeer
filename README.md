@@ -1,6 +1,6 @@
 # van Gogh
 
-van Gogh is a Linktree-style profile theme with an eyegrabbing marquee effect on the site title. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
+van Gogh is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
 
 ![van Gogh](https://github.com/andersnoren/van-gogh/blob/main/screenshot.jpg)
 
