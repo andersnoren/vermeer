@@ -1,0 +1,8 @@
+@media ( max-width: 781px ) {
+	:root .is-style-van-gogh-cover-mobile-3x4 {
+		min-height: 132vw !important;
+	}
+	:root .is-style-van-gogh-cover-mobile-1x1 {
+		min-height: 100vw !important;
+	}
+}

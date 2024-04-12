@@ -17,10 +17,14 @@
 }
 
 @supports( mask-image: url() ) {
+
+	.wp-block-button.is-style-van-gogh-icon-right-arrow .wp-block-button__link,
 	.wp-block-navigation.is-style-van-gogh-separated-with-arrows .wp-block-navigation-link > a {
 		padding-right: 3.125em;
+		position: relative;
 	}
 
+	.wp-block-button.is-style-van-gogh-icon-right-arrow .wp-block-button__link:after,
 	.wp-block-navigation.is-style-van-gogh-separated-with-arrows .wp-block-navigation-link > a:after {
 		background: currentColor;
 		content: "";
@@ -39,7 +43,9 @@
 		width: 1.25em;
 	}
 
+	.wp-block-button.is-style-van-gogh-icon-right-arrow .wp-block-button__link:hover:after,
 	.wp-block-navigation.is-style-van-gogh-separated-with-arrows .wp-block-navigation-link > a:hover:after {
 		transform: translateX( 1em );
 	}
+
 }

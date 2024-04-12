@@ -1,17 +1,10 @@
-header.wp-block-template-part {
-	mix-blend-mode: exclusion;
-	position: fixed;
-		left: 0;
-		right: 0;
-		top: 0;
-	z-index: 11;
+[class*="is-style-van-gogh-marquee-"] {
+	overflow: hidden;
+	transition: opacity .25s linear;
 }
 
-.is-style-van-gogh-marquee,
-.is-style-van-gogh-marquee .slider {
+[class*="is-style-van-gogh-marquee-"],
+[class*="is-style-van-gogh-marquee-"] .slider {
 	display: flex;
-}
-
-.is-style-van-gogh-marquee .slider {
 	white-space: nowrap;
 }

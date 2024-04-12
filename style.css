@@ -21,10 +21,10 @@ body {
 
 a {
 	text-decoration-thickness: 1px;
-	text-underline-offset: 0.15em;
+	text-underline-offset: 0.2em;
 }
 
-:where(.wp-site-blocks) > * {
+:root :where(.wp-site-blocks) > * {
 	margin-block-start: 0;
 }
 
@@ -34,10 +34,34 @@ a {
 	}
 }
 
+/* HELPER CLASSES */
+
+@media ( max-width: 781px ) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) .hide-when-colums-are-stacked {
+		display: none !important;
+	}
+}
+
+
 /* TYPOGRAPHY */
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-feature-settings: 'ss02' on, 'ss03' on;
+}
+
+.has-huge-title-font-size {
+	letter-spacing: -0.05em;
+}
+
+/* TEMPLATE PART: HEADER */
+
+body:not(.editor-styles-wrapper) .van-gogh-is-fixed-title-header {
+	mix-blend-mode: exclusion;
+	position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+	z-index: 11;
 }
 
 /* TEMPLATE PART: FOOTER */

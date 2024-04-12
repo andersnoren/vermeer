@@ -2,30 +2,58 @@ class Marquee {
 
 	constructor( marquee, options ) {
 
-		var marqueeInstance = this;
+		if ( marquee == null ) return;
+
+		let mInst = this;
 
 		const defaultOptions = {
+			direction: 'left',
 			speed: .5,
 		};
 
-		this.options = {
+		mInst.options = {
 			...defaultOptions,
 			...options
 		};
 
-		this.marquee      = marquee;
-		this.marqueeHTML  = this.marquee.innerHTML;
+		mInst.marquee      = marquee;
+		mInst.marqueeHTML  = mInst.marquee.innerHTML;
 
 		// Construct the HTML used for the marquee.
-		this.build();
+		mInst.build();
 
 		// Animate the marquee.
-		this.animate();
+		mInst.animate();
 
-		// On screen resize, do it again.
+		// On screen width resize end, rebuild and restart the marquee.
+		var resizeEndCounter;
+		var prevWinWidth = window.innerWidth;
 		window.addEventListener( 'resize', function() {
-			marqueeInstance.build();
-			marqueeInstance.animate();
+
+			// Check that the window width has changed.
+			if ( prevWinWidth == window.innerWidth ) return;
+			prevWinWidth = window.innerWidth;
+
+			mInst.marquee.style.opacity = 0;
+
+			clearTimeout( resizeEndCounter );
+			
+			resizeEndCounter = setTimeout( function() {
+				
+				// Set the new starting point of the slider to the current X position of the slider.
+				mInst.startingX = mInst.newX;
+
+				// Clear the current interval animating the slider.
+				clearInterval( mInst.animateInterval );
+
+				// Rebuild and reanimate.
+				mInst.build();
+				mInst.animate();
+
+				mInst.startingX = null;
+				mInst.marquee.style.opacity = 1;
+
+			}, 500 );
 		} );
 
 	}
@@ -33,50 +61,79 @@ class Marquee {
 	// Construct the HTML used for the marquee.
 	build() {
 
-		const screenWidth = window.innerWidth;
+		let mInst = this;
 
-		// Add an inner div that will wrap the clones and will be animated across the screen.
-		this.marquee.innerHTML = '<div class="slider">' + this.marqueeHTML + ' </div>';
-		var slider = this.marquee.children[0];
+		const marqueeWidth = mInst.marquee.getBoundingClientRect().width;
+
+		// Wrap the clones in a div that the animation will be applied to.
+		mInst.marquee.innerHTML = '<div class="slider">' + mInst.marqueeHTML + ' </div>';
+		let slider             = mInst.marquee.children[0];
 
 		// Build the HTML.
-		let newInnerHTML = '<div>' + this.marqueeHTML + '&nbsp;</div>';
+		let newInnerHTML = '<div>' + mInst.marqueeHTML + '&nbsp;</div>';
 		slider.innerHTML = newInnerHTML;
 
-		// Clone the content until it's wide enough to cover the screen width.
+		// Clone the content until it's wide enough to cover the marquee.
 		let sliderWidth = 0;
-		while ( sliderWidth < screenWidth ) {
+		while ( sliderWidth < marqueeWidth ) {
 			sliderWidth = slider.getBoundingClientRect().width;
 			slider.innerHTML += newInnerHTML;
 		}
-
+		
 	}
 
 	// Animate the marquee.
 	animate() {
 
-		// Animate the section.
-		var slider = this.marquee.children[0];
-		var children = slider.children;
-		let i = 0;
+		let mInst     = this;
 
-		var speed = this.options.speed;
+		let dir       = mInst.options.direction;
+		let speed     = dir == 'left' ? mInst.options.speed : ( -1 * mInst.options.speed );
 
-		setInterval( function() {
-			for ( var child = 0; child < children.length; child++ ) {
-				slider.style.transform = `translateX( -${i}px )`;
+		let slider    = mInst.marquee.querySelector( '.slider' );
+		let children  = slider.children;
+
+		// Check if there's a starting position set.
+		mInst.newX    = mInst.startingX != null ? mInst.startingX : 0;
+
+		mInst.animateInterval = setInterval( function() {
+
+			let childWidth = children[0].getBoundingClientRect().width;
+
+			// Calculate the new position and check if it's out of bounds, based on the direction.
+			if ( dir == 'left' ) {
+				mInst.newX = mInst.newX + speed;
+				if ( mInst.newX > childWidth ) {
+					mInst.newX = 0;
+				}
+			} else {
+				mInst.newX = mInst.newX - speed;
+				if ( mInst.newX > 0 ) {
+					mInst.newX = ( -1 * childWidth );
+				}
 			}
-			if ( i > children[0].getBoundingClientRect().width ) {
-				i = 0;
-			}
-			slider.style.transform = `translateX( -${i}px )`;
-			i = i + speed;
+
+			// Set the new position.
+			let translateX         = ( dir == 'left' ) ? -1 * mInst.newX : mInst.newX;
+			slider.style.transform = `translateX( ${translateX}px )`;
+
 		}, 0 );
 		
 	}
 
 }
 
+// Initialize the marquees.
 window.addEventListener( 'load', function() {
-	newMarquee = new Marquee( document.querySelector( '.is-style-van-gogh-marquee' ) );
+
+	let marquees = document.querySelectorAll( '[class*="is-style-van-gogh-marquee"]' );
+
+	if ( marquees.length ) {
+		marquees.forEach( function( marquee ) {
+			new Marquee( marquee, {
+				direction: marquee.classList.contains( 'is-style-van-gogh-marquee-left' ) ? 'left' : 'right',
+			} );
+		} );
+	}
+
 } );
