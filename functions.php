@@ -3,37 +3,37 @@
 	THEME SUPPORTS
 --------------------------------------------------------------------------------------------------- */
 
-function van_gogh_setup() {
+function vincent_setup() {
 	add_editor_style( array( 'style.css' ) );
 }
-add_action( 'after_setup_theme', 'van_gogh_setup' );
+add_action( 'after_setup_theme', 'vincent_setup' );
 
 
 /*	-----------------------------------------------------------------------------------------------
 	ENQUEUE STYLESHEETS
 --------------------------------------------------------------------------------------------------- */
 
-function van_gogh_styles() {
-	wp_enqueue_style( 'van-gogh-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'van-gogh' )->get( 'Version' ) );
+function vincent_styles() {
+	wp_enqueue_style( 'vincent-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'vincent' )->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', 'van_gogh_styles' );
+add_action( 'wp_enqueue_scripts', 'vincent_styles' );
 
 
 /*	-----------------------------------------------------------------------------------------------
 	REGISTER BLOCK STYLES
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'van_gogh_block_styles' ) ) :
-	function van_gogh_block_styles() {
+if ( ! function_exists( 'vincent_block_styles' ) ) :
+	function vincent_block_styles() {
 
 		/* ENQUEUE STYLESHEETS FOR SPECIFIC BLOCKS */
 
 		wp_enqueue_block_style(
 			'core/social-links',
 			array(
-				'handle'	=> 'van-gogh-social-links',
+				'handle'	=> 'vincent-social-links',
 				'src'		=> get_theme_file_uri( 'assets/css/blocks/social-links.css' ),
-				'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
+				'ver'		=> wp_get_theme( 'vincent' )->get( 'Version' ),
 				'path'		=> get_theme_file_path( 'assets/css/blocks/social-links.css' ),
 			)
 		);
@@ -52,10 +52,10 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 			wp_enqueue_block_style(
 				$marquee_block,
 				array(
-					'handle'	=> 'van-gogh-marquee',
-					'src'		=> get_theme_file_uri( 'assets/css/block-styles/van-gogh-marquee.css' ),
-					'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
-					'path'		=> get_theme_file_path( 'assets/css/block-styles/van-gogh-marquee.css' ),
+					'handle'	=> 'vincent-marquee',
+					'src'		=> get_theme_file_uri( 'assets/css/block-styles/vincent-marquee.css' ),
+					'ver'		=> wp_get_theme( 'vincent' )->get( 'Version' ),
+					'path'		=> get_theme_file_path( 'assets/css/block-styles/vincent-marquee.css' ),
 				)
 			);
 		}
@@ -65,10 +65,10 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		wp_enqueue_block_style(
 			'core/cover',
 			array(
-				'handle'	=> 'van-gogh-cover-cover-mobile-size',
-				'src'		=> get_theme_file_uri( 'assets/css/block-styles/van-gogh-cover-mobile-size.css' ),
-				'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
-				'path'		=> get_theme_file_path( 'assets/css/block-styles/van-gogh-cover-mobile-size.css' ),
+				'handle'	=> 'vincent-cover-cover-mobile-size',
+				'src'		=> get_theme_file_uri( 'assets/css/block-styles/vincent-cover-mobile-size.css' ),
+				'ver'		=> wp_get_theme( 'vincent' )->get( 'Version' ),
+				'path'		=> get_theme_file_path( 'assets/css/block-styles/vincent-cover-mobile-size.css' ),
 			)
 		);
 
@@ -83,10 +83,10 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 			wp_enqueue_block_style(
 				$link_with_arrow_block,
 				array(
-					'handle'	=> 'van-gogh-link-with-arrow',
-					'src'		=> get_theme_file_uri( 'assets/css/block-styles/van-gogh-link-with-arrow.css' ),
-					'ver'		=> wp_get_theme( 'van-gogh' )->get( 'Version' ),
-					'path'		=> get_theme_file_path( 'assets/css/block-styles/van-gogh-link-with-arrow.css' ),
+					'handle'	=> 'vincent-link-with-arrow',
+					'src'		=> get_theme_file_uri( 'assets/css/block-styles/vincent-link-with-arrow.css' ),
+					'ver'		=> wp_get_theme( 'vincent' )->get( 'Version' ),
+					'path'		=> get_theme_file_path( 'assets/css/block-styles/vincent-link-with-arrow.css' ),
 				)
 			);
 		}
@@ -98,8 +98,8 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		register_block_style(
 			'core/navigation',
 			array(
-				'name'			=> 'van-gogh-separated-with-arrows',
-				'label'			=> __( 'Styled vertical navigation', 'van-gogh' )
+				'name'			=> 'vincent-separated-with-arrows',
+				'label'			=> __( 'Styled vertical navigation', 'vincent' )
 			)
 		);
 
@@ -108,16 +108,16 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		register_block_style(
 			'core/button',
 			array(
-				'name'			=> 'van-gogh-icon-right-arrow',
-				'label'			=> __( 'Arrow to the right', 'van-gogh' )
+				'name'			=> 'vincent-icon-right-arrow',
+				'label'			=> __( 'Arrow to the right', 'vincent' )
 			)
 		);
 
 		/* Cover: Mobile aspect ratios */
 
 		$cover_mobile_size_styles = array(
-			'van-gogh-cover-mobile-3x4'		=> __( '3x4 on mobile', 'van-gogh' ),
-			'van-gogh-cover-mobile-1x1'		=> __( '1x1 on mobile', 'van-gogh' )
+			'vincent-cover-mobile-3x4'		=> __( '3x4 on mobile', 'vincent' ),
+			'vincent-cover-mobile-1x1'		=> __( '1x1 on mobile', 'vincent' )
 		);
 
 		foreach( $cover_mobile_size_styles as $cover_mobile_size_style_name => $cover_mobile_size_style_label ) {
@@ -133,8 +133,8 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		/* Headings: Marquee */
 
 		$marquee_block_styles = array(
-			'van-gogh-marquee-left'		=> __( 'Marquee (←)', 'van-gogh' ),
-			'van-gogh-marquee-right'	=> __( 'Marquee (→)', 'van-gogh' ),
+			'vincent-marquee-left'		=> __( 'Marquee (←)', 'vincent' ),
+			'vincent-marquee-right'	=> __( 'Marquee (→)', 'vincent' ),
 		);
 
 		$marquee_blocks = array(
@@ -157,18 +157,18 @@ if ( ! function_exists( 'van_gogh_block_styles' ) ) :
 		
 	}
 endif;
-add_action( 'init', 'van_gogh_block_styles' );
+add_action( 'init', 'vincent_block_styles' );
 
 
 /*	-----------------------------------------------------------------------------------------------
 	REGISTER SCRIPTS
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'van_gogh_register_scripts' ) ) :
-	function van_gogh_register_scripts() {
+if ( ! function_exists( 'vincent_register_scripts' ) ) :
+	function vincent_register_scripts() {
 		
-		wp_enqueue_script( 'van-gogh-marquee', get_theme_file_uri( 'assets/js/van-gogh-marquee.js' ), array(), wp_get_theme( 'van-gogh' )->get( 'Version' ), array( 'in_footer' => true ) );
+		wp_enqueue_script( 'vincent-marquee', get_theme_file_uri( 'assets/js/vincent-marquee.js' ), array(), wp_get_theme( 'vincent' )->get( 'Version' ), array( 'in_footer' => true ) );
 
 	}
 endif;
-add_action( 'wp_enqueue_scripts', 'van_gogh_register_scripts' );
+add_action( 'wp_enqueue_scripts', 'vincent_register_scripts' );

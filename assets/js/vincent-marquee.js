@@ -129,12 +129,12 @@ class Marquee {
 // Initialize the marquees.
 window.addEventListener( 'load', function() {
 
-	let marquees = document.querySelectorAll( '[class*="is-style-van-gogh-marquee"]' );
+	let marquees = document.querySelectorAll( '[class*="is-style-vincent-marquee"]' );
 
 	if ( marquees.length ) {
 		marquees.forEach( function( marquee ) {
 			new Marquee( marquee, {
-				direction: marquee.classList.contains( 'is-style-van-gogh-marquee-left' ) ? 'left' : 'right',
+				direction: marquee.classList.contains( 'is-style-vincent-marquee-left' ) ? 'left' : 'right',
 			} );
 		} );
 	}

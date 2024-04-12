@@ -1,0 +1,51 @@
+.wp-block-navigation.is-style-vincent-separated-with-arrows > .wp-block-navigation__container,
+.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-item,
+.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-link a {
+	width: 100%;
+}
+
+.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-item {
+	border-top: 1px solid currentColor;
+}
+
+.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-link > a {
+	padding: 1em 0;
+}
+
+.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation__container> .wp-block-navigation-link:last-child > a {
+	padding-bottom: 0;
+}
+
+@supports( mask-image: url() ) {
+
+	.wp-block-button.is-style-vincent-icon-right-arrow .wp-block-button__link,
+	.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-link > a {
+		padding-right: 3.125em;
+		position: relative;
+	}
+
+	.wp-block-button.is-style-vincent-icon-right-arrow .wp-block-button__link:after,
+	.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-link > a:after {
+		background: currentColor;
+		content: "";
+		display: block;
+		height: 1em;
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg width='19' height='14' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 7H0' stroke='%23ECECE9' stroke-width='1.2'/%3E%3Cpath d='M12 1L18 7L12 13' stroke='%23ECECE9' stroke-width='1.2'/%3E%3C/svg%3E%0A");
+		mask-image: url("data:image/svg+xml,%3Csvg width='19' height='14' viewBox='0 0 19 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 7H0' stroke='%23ECECE9' stroke-width='1.2'/%3E%3Cpath d='M12 1L18 7L12 13' stroke='%23ECECE9' stroke-width='1.2'/%3E%3C/svg%3E%0A");
+			-webkit-mask-position: center;
+		mask-position: center;
+			-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		position: absolute;
+			right: 1em;
+			top: 1em;
+		transition: transform .4s cubic-bezier(0.14, 0.4, 0.09, 0.99);
+		width: 1.25em;
+	}
+
+	.wp-block-button.is-style-vincent-icon-right-arrow .wp-block-button__link:hover:after,
+	.wp-block-navigation.is-style-vincent-separated-with-arrows .wp-block-navigation-link > a:hover:after {
+		transform: translateX( 1em );
+	}
+
+}

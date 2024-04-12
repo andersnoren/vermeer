@@ -1,0 +1,14 @@
+[class*="is-style-vincent-marquee-"] {
+	overflow: hidden;
+	transition: opacity .25s linear;
+}
+
+[class*="is-style-vincent-marquee-"],
+[class*="is-style-vincent-marquee-"] .slider {
+	display: flex;
+	white-space: nowrap;
+}
+
+[class*="is-style-vincent-marquee-"] .slider {
+	will-change: transform;
+}
