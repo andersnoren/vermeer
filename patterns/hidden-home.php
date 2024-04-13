@@ -50,7 +50,11 @@
 				<!-- wp:group {"metadata":{"name":"Biography"},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group"><!-- wp:paragraph -->
 					<p>
+<<<<<<< HEAD
 						<?php echo esc_html_x('I am Johannes Vermeer, born in 1853. I paint with fervent passion, crafting celebrated works despite some personal struggles. My art resonates worldwide, immortalizing my unique perspective and inspiring generations with its enduring beauty.', 'Home starting content: Profile', 'vermeer');?>
+=======
+						<?php echo __('I am Johannes Vermeer, born in 1853. I paint with fervent passion, crafting celebrated works despite some personal struggles. My art resonates worldwide, immortalizing my unique perspective and inspiring generations with its enduring beauty.', 'vermeer');?>
+>>>>>>> af4cd3d4c0cee218ed748118835affc0337e79fa
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
@@ -60,9 +64,15 @@
 				<div class="wp-block-group">
 					<!-- wp:navigation {"overlayMenu":"never","className":"is-style-vermeer-separated-with-arrows","layout":{"type":"flex","orientation":"vertical"}} -->
 
+<<<<<<< HEAD
 						<!-- wp:navigation-link {"label":"<?php echo esc_html_x('My Blog', 'Home starting content: Navigation link text', 'vermeer');?>","url":"#"} /-->
 						<!-- wp:navigation-link {"label":"<?php echo esc_html_x('My Flickr', 'Home starting content: Navigation link text', 'vermeer');?>","url":"#"} /-->
 						<!-- wp:navigation-link {"label":"<?php echo esc_html_x('Buy My Artwork', 'Home starting content: Navigation link text', 'vermeer');?>","url":"#"} /-->
+=======
+						<!-- wp:navigation-link {"label":"My Blog","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"My Flickr","url":"#"} /-->
+						<!-- wp:navigation-link {"label":"Buy My Artwork","url":"#"} /-->
+>>>>>>> af4cd3d4c0cee218ed748118835affc0337e79fa
 
 					<!-- /wp:navigation -->
 				</div>
