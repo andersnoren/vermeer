@@ -394,9 +394,7 @@
 			"core/navigation": {
 				"spacing": {
 					"blockGap": "0"
-				}
-			},
-			"core/navigation-link": {
+				},
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--geist-mono)",
 					"lineHeight": "1.25"
