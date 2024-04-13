@@ -1,8 +1,8 @@
 /*
 Theme Name: Vermeer
 Text Domain: vermeer
-Version: 1.0.0
-Description: Vermeer is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
+Version: 1.0.1
+Description: Vermeer is a profile theme with a unique design and eye-grabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It has 13 different built-in theme styles, and fonts and colors are easy to modify in the WordPress Site Editor.
 Tags: custom-colors, custom-menu, editor-style, featured-images, full-site-editing, block-patterns, translation-ready, wide-blocks, block-styles, style-variations, portfolio
 Author: Anders Norén
 Author URI: https://andersnoren.se
@@ -31,7 +31,7 @@ a {
 
 @supports (min-height: 100dvh) {
 	[style*="min-height:100vh"] {
-		min-height: 100dvh !important;
+		min-height: calc( 100dvh - var( --wp-admin--admin-bar--height, 0px ) ) !important;
 	}
 }
 

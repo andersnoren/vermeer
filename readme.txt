@@ -58,5 +58,13 @@ Source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_s0273V1962_-_
 
 == Changelog ==
 
+Version 1.0.1 (2024-04-13)
+-------------------------
+- Updated theme description.
+- Home: Updated navigation with a default set of links.
+- Navigation: Improved CSS targeting for styled vertical navigation block style.
+- Navigation: Improved style compatibility with different types of menus, including page lists.
+- Modified screen height CSS overwrite to account for admin bar height.
+
 Version 1.0.0 (2024-04-12)
 -------------------------

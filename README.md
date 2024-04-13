@@ -1,6 +1,6 @@
 # Vermeer
 
-Vermeer is a profile theme with a unique design and eyegrabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It comes with 13 different color schemes to choose from.
+Vermeer is a profile theme with a unique design and eye-grabbing marquee effect. Add a photograph, a short bio and your links, and your profile page is ready to go. It has 13 different built-in theme styles, and fonts and colors are easy to modify in the WordPress Site Editor.
 
 ![Vermeer](https://github.com/andersnoren/vermeer/blob/main/screenshot.jpg)
 

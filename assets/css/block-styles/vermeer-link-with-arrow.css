@@ -1,6 +1,6 @@
-.wp-block-navigation.is-style-vermeer-separated-with-arrows > .wp-block-navigation__container,
+.wp-block-navigation.is-style-vermeer-separated-with-arrows ul,
 .wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item,
-.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-link a {
+.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item a {
 	width: 100%;
 }
 
@@ -8,24 +8,24 @@
 	border-top: 1px solid currentColor;
 }
 
-.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-link > a {
+.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a {
 	padding: 1em 0;
 }
 
-.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation__container> .wp-block-navigation-link:last-child > a {
+.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation__container> .wp-block-navigation-item:last-child > a {
 	padding-bottom: 0;
 }
 
 @supports( mask-image: url() ) {
 
 	.wp-block-button.is-style-vermeer-icon-right-arrow .wp-block-button__link,
-	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-link > a {
+	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a {
 		padding-right: 3.125em;
 		position: relative;
 	}
 
 	.wp-block-button.is-style-vermeer-icon-right-arrow .wp-block-button__link:after,
-	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-link > a:after {
+	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a:after {
 		background: currentColor;
 		content: "";
 		display: block;
@@ -44,7 +44,7 @@
 	}
 
 	.wp-block-button.is-style-vermeer-icon-right-arrow .wp-block-button__link:hover:after,
-	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-link > a:hover:after {
+	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a:hover:after {
 		transform: translateX( 1em );
 	}
 
