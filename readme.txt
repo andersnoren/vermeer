@@ -58,6 +58,14 @@ Source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_s0273V1962_-_
 
 == Changelog ==
 
+Version 1.0.2 (2024-04-XX)
+-------------------------
+- Updated the fixed position title to account for admin bar height.
+- single.html: Formatted for readability.
+- Don't show the marquee until it has been built.
+- Set the home navigation to justify: stretch navigation items, replacing some block style CSS.
+- index.html: Added "Search Results Title" and "No Results" blocks, to account for the search results page.
+
 Version 1.0.1 (2024-04-13)
 -------------------------
 - Updated theme description.

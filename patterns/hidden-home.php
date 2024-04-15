@@ -58,7 +58,7 @@
 
 				<!-- wp:group {"metadata":{"name":"Links"},"layout":{"type":"constrained","contentSize":"395px","justifyContent":"left"}} -->
 				<div class="wp-block-group">
-					<!-- wp:navigation {"overlayMenu":"never","className":"is-style-vermeer-separated-with-arrows","layout":{"type":"flex","orientation":"vertical"}} -->
+					<!-- wp:navigation {"overlayMenu":"never","className":"is-style-vermeer-separated-with-arrows","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
 
 						<!-- wp:navigation-link {"label":"<?php echo esc_html_x('My Blog', 'Home starting content: Navigation link text', 'vermeer');?>","url":"#"} /-->
 						<!-- wp:navigation-link {"label":"<?php echo esc_html_x('My Flickr', 'Home starting content: Navigation link text', 'vermeer');?>","url":"#"} /-->

@@ -1,14 +1,24 @@
-[class*="is-style-vermeer-marquee-"] {
+body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"] {
+	opacity: 0;
 	overflow: hidden;
-	transition: opacity .25s linear;
 }
 
-[class*="is-style-vermeer-marquee-"],
-[class*="is-style-vermeer-marquee-"] .slider {
+@media( prefers-reduced-motion: no-preference ) {
+	body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"] {
+		transition: opacity .3s linear;
+	}
+}
+
+body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"].marquee-initialized {
+	opacity: 1;
+}
+
+body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"],
+body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"] .slider {
 	display: flex;
 	white-space: nowrap;
 }
 
-[class*="is-style-vermeer-marquee-"] .slider {
+body:not(.editor-styles-wrapper) [class*="is-style-vermeer-marquee-"] .slider {
 	will-change: transform;
 }

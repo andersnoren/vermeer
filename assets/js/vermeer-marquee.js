@@ -82,6 +82,9 @@ class Marquee {
 			sliderWidth = slider.getBoundingClientRect().width;
 			slider.innerHTML += newInnerHTML;
 		}
+
+		// Add a class indicating the marquee has been built.
+		mInst.marquee.classList.add( 'marquee-initialized' );
 		
 	}
 

@@ -1,6 +1,5 @@
-.wp-block-navigation.is-style-vermeer-separated-with-arrows ul,
-.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item,
-.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item a {
+.wp-block-navigation.is-style-vermeer-separated-with-arrows.is-content-justification-stretch .wp-block-navigation-item,
+.wp-block-navigation.is-style-vermeer-separated-with-arrows.is-content-justification-stretch .wp-block-navigation-item a {
 	width: 100%;
 }
 
@@ -43,9 +42,11 @@
 		width: 1.25em;
 	}
 
-	.wp-block-button.is-style-vermeer-icon-right-arrow .wp-block-button__link:hover:after,
-	.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a:hover:after {
-		transform: translateX( 1em );
+	@media( prefers-reduced-motion: no-preference ) {
+		.wp-block-button.is-style-vermeer-icon-right-arrow .wp-block-button__link:hover:after,
+		.wp-block-navigation.is-style-vermeer-separated-with-arrows .wp-block-navigation-item > a:hover:after {
+			transform: translateX( 1em );
+	}
 	}
 
 }
