@@ -14,7 +14,7 @@ add_action( 'after_setup_theme', 'vermeer_setup' );
 --------------------------------------------------------------------------------------------------- */
 
 function vermeer_styles() {
-	wp_enqueue_style( 'vermeer-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'vermeer' )->get( 'Version' ) );
+	wp_enqueue_style( 'vermeer-styles', get_template_directory_uri() . '/style.css', array(), wp_get_theme( 'vermeer' )->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'vermeer_styles' );
 
@@ -32,9 +32,9 @@ if ( ! function_exists( 'vermeer_block_styles' ) ) :
 			'core/social-links',
 			array(
 				'handle'	=> 'vermeer-social-links',
-				'src'		=> get_theme_file_uri( 'assets/css/blocks/social-links.css' ),
+				'src'		=> get_template_directory_uri() . '/assets/css/blocks/social-links.css',
 				'ver'		=> wp_get_theme( 'vermeer' )->get( 'Version' ),
-				'path'		=> get_theme_file_path( 'assets/css/blocks/social-links.css' ),
+				'path'		=> get_template_directory() . '/assets/css/blocks/social-links.css',
 			)
 		);
 
@@ -53,9 +53,9 @@ if ( ! function_exists( 'vermeer_block_styles' ) ) :
 				$marquee_block,
 				array(
 					'handle'	=> 'vermeer-marquee',
-					'src'		=> get_theme_file_uri( 'assets/css/block-styles/vermeer-marquee.css' ),
+					'src'		=> get_template_directory_uri() . '/assets/css/block-styles/vermeer-marquee.css',
 					'ver'		=> wp_get_theme( 'vermeer' )->get( 'Version' ),
-					'path'		=> get_theme_file_path( 'assets/css/block-styles/vermeer-marquee.css' ),
+					'path'		=> get_template_directory() . '/assets/css/block-styles/vermeer-marquee.css',
 				)
 			);
 		}
@@ -66,9 +66,9 @@ if ( ! function_exists( 'vermeer_block_styles' ) ) :
 			'core/cover',
 			array(
 				'handle'	=> 'vermeer-cover-cover-mobile-size',
-				'src'		=> get_theme_file_uri( 'assets/css/block-styles/vermeer-cover-mobile-size.css' ),
+				'src'		=> get_template_directory_uri() . '/assets/css/block-styles/vermeer-cover-mobile-size.css',
 				'ver'		=> wp_get_theme( 'vermeer' )->get( 'Version' ),
-				'path'		=> get_theme_file_path( 'assets/css/block-styles/vermeer-cover-mobile-size.css' ),
+				'path'		=> get_template_directory() . '/assets/css/block-styles/vermeer-cover-mobile-size.css',
 			)
 		);
 
@@ -84,9 +84,9 @@ if ( ! function_exists( 'vermeer_block_styles' ) ) :
 				$link_with_arrow_block,
 				array(
 					'handle'	=> 'vermeer-link-with-arrow',
-					'src'		=> get_theme_file_uri( 'assets/css/block-styles/vermeer-link-with-arrow.css' ),
+					'src'		=> get_template_directory_uri() . '/assets/css/block-styles/vermeer-link-with-arrow.css',
 					'ver'		=> wp_get_theme( 'vermeer' )->get( 'Version' ),
-					'path'		=> get_theme_file_path( 'assets/css/block-styles/vermeer-link-with-arrow.css' ),
+					'path'		=> get_template_directory() . '/assets/css/block-styles/vermeer-link-with-arrow.css',
 				)
 			);
 		}
