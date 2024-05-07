@@ -58,7 +58,7 @@ Source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_s0273V1962_-_
 
 == Changelog ==
 
-Version 1.0.4 (2024-05-03)
+Version 1.0.4 (2024-05-07)
 -------------------------
 - Fixed the site title block having a leftover class in patterns/hidden-header.php.
 
