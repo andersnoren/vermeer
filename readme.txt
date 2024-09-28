@@ -3,7 +3,7 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.5
 Requires PHP: 7.0
-Tested up to: 6.5
+Tested up to: 6.6
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -57,6 +57,11 @@ License: Public domain
 Source: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_s0273V1962_-_Van_Gogh_Museum.jpg
 
 == Changelog ==
+
+Version 1.0.5 (2024-09-28)
+-------------------------
+- Updated the footer credit link to point to andersnoren.se (thanks, @adamkheckler).
+- Bumped "Tested up to" to 6.6.
 
 Version 1.0.4 (2024-05-07)
 -------------------------
